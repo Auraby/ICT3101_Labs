@@ -62,7 +62,7 @@ namespace ICT3101_Calculator
             {
                 return (num1 + num2);
             }*/
-
+            //Test add changes for CI/CD
 
             String binary1 = num1.ToString();
             String binary2 = num2.ToString();
