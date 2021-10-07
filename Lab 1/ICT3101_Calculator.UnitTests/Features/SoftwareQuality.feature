@@ -10,7 +10,6 @@ Scenario: Calculating Defect Density
 @LogarithmicFailureIntensity
 Scenario: Calculating failure intensity
     Given I have a calculator
-    And the time is "10"
     And the decay parameter is "0.02"
     When I entered the initial failure intensity "10" and number of failures experienced is "50"
     Then the number of experienced failures is "3.68"
