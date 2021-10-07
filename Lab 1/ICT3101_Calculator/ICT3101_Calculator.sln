@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICT3101_Calculator", "ICT3101_Calculator.csproj", "{0D5A2BFB-ECA0-441F-A135-61A891569E68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICT3101_Calculator", "ICT3101_Calculator.csproj", "{0D5A2BFB-ECA0-441F-A135-61A891569E68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICT3101_Calculator.UnitTests", "..\ICT3101_Calculator.UnitTests\ICT3101_Calculator.UnitTests.csproj", "{4F207BAD-33B2-42EE-B36B-55A840DF7CA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICT3101_Calculator.UnitTests", "..\ICT3101_Calculator.UnitTests\ICT3101_Calculator.UnitTests.csproj", "{4F207BAD-33B2-42EE-B36B-55A840DF7CA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C7DCE69B-9EAD-4E49-9B59-21CAA6002278}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
