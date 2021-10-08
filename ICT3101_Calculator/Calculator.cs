@@ -5,6 +5,8 @@ using System.Text.RegularExpressions;
 
 namespace ICT3101_Calculator
 {
+    
+
     public class Calculator
     {
         public Calculator() { }
@@ -234,7 +236,21 @@ namespace ICT3101_Calculator
         {
             return decimal.Round((decimal)Multiply(initialFailure, Math.Exp(Multiply(-decayParam, avgExptFailure))),2);
         }
-        
 
+        public double GenMagicNum(double input, IFileReader fileReader)
+        {
+            double result = 0;
+            int choice = Convert.ToInt16(input);
+            //Dependency------------------------------
+            //FileReader getTheMagic = new FileReader();
+            //----------------------------------------
+            string[] magicStrings = fileReader.Read("../../../../ICT3101_Calculator/MagicNumbers.txt");
+            if ((choice >= 0) && (choice < magicStrings.Length))
+            {
+                result = Convert.ToDouble(magicStrings[choice]);
+            }
+            result = (result > 0) ? (2 * result) : (-2 * result);
+            return result;
+        }
     }
 }

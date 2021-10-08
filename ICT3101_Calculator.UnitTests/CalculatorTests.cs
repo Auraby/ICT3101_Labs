@@ -5,11 +5,13 @@ namespace ICT3101_Calculator.UnitTests
     public class CalculatorTests
     {
         private Calculator _calculator;
+        private IFileReader fileReader;
         [SetUp]
         public void Setup()
         {
             // Arrange
             _calculator = new Calculator();
+            fileReader = new FileReader();
         }
         [Test]
         public void Add_WhenAddingTwoNumbers_ResultEqualToSum()
@@ -237,5 +239,36 @@ namespace ICT3101_Calculator.UnitTests
 
 
         #endregion
+
+        //Lab 4
+        [Test]
+        public void GenMagicNum_WithValidChoice_ResultReturnsPositiveOfChoice()
+        {
+            //Act
+            double result = _calculator.GenMagicNum(2, fileReader);
+
+            //Assert
+            Assert.That(result, Is.EqualTo(12));
+        }
+
+        [Test]
+        public void GenMagicNum_WithValidChoice_NegativeResultReturnsPositiveOfChoice()
+        {
+            //Act
+            double result = _calculator.GenMagicNum(1, fileReader);
+
+            //Assert
+            Assert.That(result, Is.EqualTo(4));
+        }
+
+        [Test]
+        public void GenMagicNum_WithInvalidChoice_ResultReturnZero()
+        {
+            //Act
+            double result = _calculator.GenMagicNum(10, fileReader);
+
+            //Assert
+            Assert.That(result, Is.EqualTo(0));
+        }
     }
 }
