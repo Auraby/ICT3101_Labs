@@ -19,7 +19,7 @@ namespace ICT3101_Calculator.UnitTests.Selenium_Tests
             // Setup local Selenium WebDriver
             FirefoxOptions option = new FirefoxOptions();
             option.AddArgument("--headless");
-            _driver = new FirefoxDriver("../../../../ICT3101_Calculator.UnitTests/geckodriver-v0.30.0-win64",option);
+            _driver = new FirefoxDriver(option);
         }
         [Test]
         public void GoogleSubtract_WhenSubracting2from6_ResultEquals4()
